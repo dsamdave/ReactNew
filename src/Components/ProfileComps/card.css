@@ -1,0 +1,26 @@
+
+
+.card{
+    border:  2px solid green;
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contents h1, h3 {
+    text-align: center;
+}
+
+.contents h1{
+    color: blue;
+}
+.contents h3{
+    color: green;
+}
+

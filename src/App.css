@@ -33,9 +33,9 @@
   }
 }
 
-.card {
+/* .card {
   padding: 2em;
-}
+} */
 
 .read-the-docs {
   color: #888;
@@ -48,6 +48,8 @@
 
   border: 2px solid green;
   padding: 20px;
+
+  /* background-image: url("./logoll.png"); */
 
 }
 

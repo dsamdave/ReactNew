@@ -1,28 +1,67 @@
-import LeftComp from "./Components/Assignment/LeftComp"
-import RightComp from "./Components/Assignment/rightComp"
-import "./App.css"
-import CountComp from "./Components/CountComps/Count"
+import "./App.css";
+import Card from "./Components/ProfileComps/Card";
 
+const App = () => {
+  const users = [
+    {
+      firstName: "David",
+      lastName: "Sampson",
+      email: "exaple@gmail.com",
+      phone: 12345678790,
+    },
+    {
+      firstName: "George",
+      lastName: "White",
+      email: "White@gmail.com",
+      phone: 12345678790,
+    },
+    {
+      firstName: "Joy",
+      lastName: "Solomon",
+      email: "joy@gmail.com",
+      phone: 12345678790,
+    },
+  ];
 
-
-
-const App =()=>{
   return (
-
     <>
-    <div className="container">
-      <LeftComp />
+      {/* <Card 
+      firstName={"David"} 
+      lastName={"Sampson"} 
+      email={"eaxmple@gmail.com"} 
+      phone={"01234567890"}
+      />
 
-      <RightComp />
+      <Card 
+      firstName={"Living "} 
+      lastName={"Stone"} 
+      email={"Stone@gmail.com"} 
+      phone={"01234Stone567890"}
+      /> */}
 
-    </div>
+      {users.map((each, idx) => (
+        <Card princess={each} />
+      ))}
+      {/* {users.map((each, index) => (
+        <div className="card" key={index}>
+          <div
+            className="image"
+            style={{ width: "100px", height: "100px", borderRadius: "50%" }}
+          >
+            <img src="/logoll.png" alt="" style={{ width: "100%" }} />
+          </div>
 
-    <CountComp />
+          <div className="contents">
+            <h1>First Name: {each?.firstName}</h1>
+            <h1>Last Name: {each?.lastName}</h1>
+
+            <h3>Email: {each?.email}</h3>
+            <h3>Phone Number: {each?.phone}</h3>
+          </div>
+        </div>
+      ))} */}
     </>
+  );
+};
 
-
-  )
-
-}
-
-export default App
+export default App;
