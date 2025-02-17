@@ -1,47 +1,44 @@
 import "./App.css";
-import Card from "./Components/ProfileComps/Card";
+import CompThree from "./Components/Feb17/CompThree";
+// import CompOne from "./Components/Feb17/CompOne";
+// import CompTwo from "./Components/Feb17/CompTwo";
+// import Card from "./Components/ProfileComps/Card";
 
 const App = () => {
-  const users = [
-    {
-      firstName: "David",
-      lastName: "Sampson",
-      email: "exaple@gmail.com",
-      phone: 12345678790,
-    },
-    {
-      firstName: "George",
-      lastName: "White",
-      email: "White@gmail.com",
-      phone: 12345678790,
-    },
-    {
-      firstName: "Joy",
-      lastName: "Solomon",
-      email: "joy@gmail.com",
-      phone: 12345678790,
-    },
-  ];
+  // const users = [
+  //   {
+  //     firstName: "David",
+  //     lastName: "Sampson",
+  //     email: "exaple@gmail.com",
+  //     phone: 12345678790,
+  //   },
+  //   {
+  //     firstName: "George",
+  //     lastName: "White",
+  //     email: "White@gmail.com",
+  //     phone: 12345678790,
+  //   },
+  //   {
+  //     firstName: "Joy",
+  //     lastName: "Solomon",
+  //     email: "joy@gmail.com",
+  //     phone: 12345678790,
+  //   },
+  // ];
 
   return (
     <>
-      {/* <Card 
-      firstName={"David"} 
-      lastName={"Sampson"} 
-      email={"eaxmple@gmail.com"} 
-      phone={"01234567890"}
-      />
 
-      <Card 
-      firstName={"Living "} 
-      lastName={"Stone"} 
-      email={"Stone@gmail.com"} 
-      phone={"01234Stone567890"}
-      /> */}
+    {/* <CompTwo /> */}
 
-      {users.map((each, idx) => (
+    <CompThree />
+
+
+
+
+      {/* {users.map((each, idx) => (
         <Card princess={each} />
-      ))}
+      ))} */}
       {/* {users.map((each, index) => (
         <div className="card" key={index}>
           <div
