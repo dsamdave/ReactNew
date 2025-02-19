@@ -23,6 +23,31 @@ const CompThree = () => {
 
   const [data, setData] = useState(dummyData);
   const [showForm, setShowForm] = useState(false)
+const [ name, setName ] = useState("")  
+const [ email, setEmail ] = useState("")  
+const [ score, setScore ] = useState("")  
+
+
+const handleSubmit = async (e)=>{
+  e.preventDefault()
+
+  const item = {
+    name: name,
+    email: email,
+    score: score
+  }
+
+  console.log(item)
+
+  setData([...data, item])
+
+  await setName("")
+  setEmail("")
+  setScore("")
+
+}
+
+
 
   return (
     <div>
@@ -61,8 +86,21 @@ const CompThree = () => {
 
       </button>
 
+      <h2>{name}</h2>
+      <h2>{email}</h2>
+      <h2>{score}</h2>
+
+
+
       {
-        showForm && <UserForm />
+        showForm && 
+        <UserForm 
+        nameee={name}
+        setNameeee={setName}
+        email={email} setEmail={setEmail}
+        score={score} setScore={setScore}
+        handleSubmit={handleSubmit}
+        />
       }
       {/* {
         showForm ? <UserForm /> : null
