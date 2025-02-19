@@ -18,6 +18,11 @@ const CompThree = () => {
       email: "david@example.com",
       score: 100,
     },
+    {
+      name: "David",
+      email: "david@example.com",
+      score: 100,
+    },
    
   ];
 
@@ -28,8 +33,8 @@ const [ email, setEmail ] = useState("")
 const [ score, setScore ] = useState("")  
 
 
-const handleSubmit = async (e)=>{
-  e.preventDefault()
+const handleSubmit = (e)=>{
+ e.preventDefault()
 
   const item = {
     name: name,
@@ -41,7 +46,7 @@ const handleSubmit = async (e)=>{
 
   setData([...data, item])
 
-  await setName("")
+  setName("")
   setEmail("")
   setScore("")
 
