@@ -1,8 +1,12 @@
 import "./App.css";
-import CompThree from "./Components/Feb17/CompThree";
+// import CompThree from "./Components/Feb17/CompThree";
 // import CompOne from "./Components/Feb17/CompOne";
 // import CompTwo from "./Components/Feb17/CompTwo";
 // import Card from "./Components/ProfileComps/Card";
+// import { Routes, Route } from "react-router-dom";
+// import LoginPage from "./pages/LoginPage";
+// import SignUp from "./pages/SignUp";
+import AppointmentPage from "./pages/Appointments";
 
 const App = () => {
   // const users = [
@@ -29,9 +33,18 @@ const App = () => {
   return (
     <>
 
+    <AppointmentPage />
+
     {/* <CompTwo /> */}
 
-    <CompThree />
+    {/* <CompThree />
+
+    <Routes>
+      <Route path="/login" element={<LoginPage />} />
+
+      <Route path="/signup" element={<SignUp />} />
+
+    </Routes> */}
 
 
 

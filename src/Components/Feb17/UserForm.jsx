@@ -10,8 +10,8 @@ const UserForm = (prop) => {
             <div className="input-container">
                 <label htmlFor="name">Enter name</label>
                 <input type="text" placeholder="Enter name"
-                value={prop.nameee}
-                onChange={(e)=> prop.setNameeee(e.target.value) }
+                value={prop.name}
+                onChange={(e)=> prop.setName(e.target.value) }
                 />
             </div>
 

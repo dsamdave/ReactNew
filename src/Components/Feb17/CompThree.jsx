@@ -36,6 +36,20 @@ const [ score, setScore ] = useState("")
 const handleSubmit = (e)=>{
  e.preventDefault()
 
+ if(!name || !email || !score){
+  return alert("Please all fields are required")
+ }
+
+//  if(!name){
+//   return alert("Please enter name")
+//  }
+//  if(!email){
+//   return alert("Please enter email")
+//  }
+//  if(!score){
+//   return alert("Please enter score")
+//  }
+
   const item = {
     name: name,
     email: email,
@@ -100,8 +114,8 @@ const handleSubmit = (e)=>{
       {
         showForm && 
         <UserForm 
-        nameee={name}
-        setNameeee={setName}
+        name={name}
+        setName={setName}
         email={email} setEmail={setEmail}
         score={score} setScore={setScore}
         handleSubmit={handleSubmit}
