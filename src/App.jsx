@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import "./App.css";
+import CompOne from "./Components/March 26/CompOne";
 // import CompThree from "./Components/Feb17/CompThree";
 // import CompOne from "./Components/Feb17/CompOne";
 // import CompTwo from "./Components/Feb17/CompTwo";
@@ -7,6 +9,7 @@ import "./App.css";
 // import LoginPage from "./pages/LoginPage";
 // import SignUp from "./pages/SignUp";
 import AppointmentPage from "./pages/Appointments";
+import { ToastContainer, toast } from 'react-toastify';
 
 const App = () => {
   // const users = [
@@ -30,10 +33,21 @@ const App = () => {
   //   },
   // ];
 
+
+useEffect(()=>{
+  toast.success("Welcome")
+  toast.error("Please login!")
+  toast.info("Please login!")
+  toast.loading("Please login!")
+  toast.warn("Please login!")
+}, [])
+
   return (
     <>
 
-    <AppointmentPage />
+    <CompOne />
+
+    {/* <AppointmentPage /> */}
 
     {/* <CompTwo /> */}
 
@@ -70,6 +84,9 @@ const App = () => {
           </div>
         </div>
       ))} */}
+
+
+<ToastContainer />
     </>
   );
 };
